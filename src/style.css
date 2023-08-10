@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf")
+    format("woff2-variations");
+  font-weight: 100 900;
+}
+
+:root {
+  --blue: #345ff6;
+  --navy: #253347;
+  --darkgrey: #5e6e85;
+  --lightgrey: #d8e2e7;
+  --white: #ffffff;
+
+  --line-height-small: 110%;
+  --line-height-tall: 150%;
+
+  --font-size-small: 1rem;
+  --font-size-large: 3rem;
+
+  --letter-spacing-short: -5%;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-v-align-top {
+}
+
+.color-darkgrey-text {
+  color: var(--darkgrey);
+}
+
+.color-navy-text {
+  color: var(--navy);
+}
+
+.color-blue-text {
+  color: var(--blue);
+}
+
+.color-white-text {
+  color: var(--white);
+}
+
+.color-background-blue {
+  background-color: var(--blue);
+}
+
+/* GET VARIABLES AND HTML ELEMENTS SETUP */

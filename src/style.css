@@ -25,6 +25,9 @@
   text-align: center;
 }
 
+body {
+}
+
 .text-v-align-top {
 }
 
@@ -46,6 +49,13 @@
 
 .color-background-blue {
   background-color: var(--blue);
+}
+
+.color-gradient-background {
+  background: linear-gradient(to top left, var(--lightgrey), var(--white));
+}
+
+.header-section {
 }
 
 /* GET VARIABLES AND HTML ELEMENTS SETUP */

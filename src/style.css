@@ -19,17 +19,27 @@
   --font-size-large: 3rem;
 
   --letter-spacing-short: -5%;
+
+  --inter: "Inter", sans-serif;
 }
 
 .text-align-center {
   text-align: center;
 }
 
-body {
+p,
+h1,
+h2,
+h3,
+h4,
+h6,
+span {
+  vertical-align: top;
 }
 
-.text-v-align-top {
-}
+/* .text-v-align-top {
+  vertical-align: top;
+} */
 
 .color-darkgrey-text {
   color: var(--darkgrey);
@@ -56,6 +66,20 @@ body {
 }
 
 .header-section {
+}
+
+.subtext {
+  color: var(--navy);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-tall);
+}
+
+.large-text {
+  font-size: var(--font-size-large);
+}
+
+.inter {
+  font-family: "Inter";
 }
 
 /* GET VARIABLES AND HTML ELEMENTS SETUP */

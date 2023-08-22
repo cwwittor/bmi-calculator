@@ -15,6 +15,7 @@
   --line-height-small: 110%;
   --line-height-tall: 150%;
 
+  --font-size-smaller-height: 0.875rem;
   --font-size-small: 1rem;
   --font-size-small-bmi-header: 1.25rem;
   --font-size-small-header: 1.5rem;
@@ -109,13 +110,25 @@ body {
 }
 
 .subtext {
-  color: var(--darkelectricblue);
+  /* color: var(--darkelectricblue); */
   font-size: var(--font-size-small);
+  line-height: var(--line-height-tall);
+}
+
+.small-text {
+  color: var(--darkelectricblue);
+  font-size: var(--font-size-smaller-height);
   line-height: var(--line-height-tall);
 }
 
 .large-text {
   font-size: var(--font-size-large);
+}
+
+.score-text {
+  font-size: var(--font-size-large);
+  letter-spacing: var(--letter-spacing-short);
+  line-height: var(--line-height-small);
 }
 
 .three-habits {

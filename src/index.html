@@ -33,7 +33,7 @@
         <h1 class="large-text color-gunmetal-text semi-bold">
           Body Mass Index Calculator
         </h1>
-        <p class="subtext">
+        <p class="subtext color-darkelectricblue-text">
           Better understand your weight in relation to your height using our
           body mass index (BM) calculator. While BMI is not the sole determinant
           of a healthy weight, it offers a valuable starting point to evaluate
@@ -41,7 +41,7 @@
         </p>
       </div>
       <div>
-        <h3>Enter your details below</h3>
+        <h3 class="subtext-header semi-bold">Enter your details below</h3>
         <div>
           <input
             type="radio"
@@ -49,29 +49,31 @@
             name="bmi_measurement_type"
             value="Metric"
           />
-          <label for="metric">Metric</label>
+          <label class="subtext color-gunmetal-text bold" for="metric"
+            >Metric</label
+          >
           <input
             type="radio"
             id="imperial"
             name="bmi_measurement_type"
             value="Imperial"
           />
-          <label for="imperial">Imperial</label>
+          <label class="subtext-gunmetalbold" for="imperial">Imperial</label>
         </div>
         <div>
           <div>
-            <label for="height">Height</label>
+            <label class="small-text" for="height">Height</label>
             <input type="text" id="height" name="bmi_measurement" value="cm" />
           </div>
           <div>
-            <label for="weight">Weight</label>
+            <label class="small-text" for="weight">Weight</label>
             <input type="text" id="weight" name="bmi_measurement" value="kg" />
           </div>
         </div>
-        <div>
-          <p>Your BMI is...</p>
-          <h1>SCORE</h1>
-          <p>
+        <div class="color-background-blue">
+          <p class="subtext color-white-text bold">Your BMI is...</p>
+          <h1 class="color-white-text">SCORE</h1>
+          <p class="color-white-text">
             Your BMI suggests you're Your BMI suggests you're
             <!-- add classification -->. Your ideal weight is between
             <!-- add range -->.
@@ -83,7 +85,7 @@
       <span>pic of guy</span>
       <div>
         <h2>What your BMI result means</h2>
-        <p class="subtext">
+        <p class="subtext color-darkelectricblue-text">
           A BMI range of 18.5 to 24.9 is considered a'healthy weight.'
           Maintaining a healthy weight may lower your chances of experiencing
           health issues later on, such as obesity and type 2 diabetes. Aim for a
@@ -109,7 +111,7 @@
           />
         </svg>
         <h3 class="subtext-header semi-bold">Healthy eating</h3>
-        <p class="subtext">
+        <p class="subtext color-darkelectricblue-text">
           Healthy eating promotes weight control, disease prevention, better
           digestion, immunity, mental clarity, and mood.
         </p>
@@ -129,7 +131,7 @@
           />
         </svg>
         <h3 class="subtext-header semi-bold">Regular exercise</h3>
-        <p class="subtext">
+        <p class="subtext color-darkelectricblue-text">
           Exercise improves fitness, aids weight control, elevates mood, and
           reduces disease risk, fostering wellness and longevity.
         </p>
@@ -149,7 +151,9 @@
           />
         </svg>
         <h3 class="subtext-header semi-bold">Adequate sleep</h3>
-        <p class="subtext">
+        <p
+          class="subtext color-darkelectricblue-text color-darkelectricblue-text"
+        >
           Sleep enhances mental clarity, emotional stability, and physical
           wellness, promoting overall restoration and rejuvenation.
         </p>
@@ -161,7 +165,9 @@
       >
         Limitations of BMI
       </h2>
-      <p class="subtext color-darkelectricblue-text text-align-center">
+      <p
+        class="subtext color-darkelectricblue-text color-darkelectricblue-text text-align-center"
+      >
         Although BMI is often a practical indicator of healthy weight, it is not
         suited for every person. Specific groups should carefully consider their
         BMI outcomes, and in certain cases, the measurement may not be
@@ -183,7 +189,7 @@
           />
         </svg>
         <span>Gender</span>
-        <p class="subtext">
+        <p class="subtext color-darkelectricblue-text">
           The development and body fat composition of girls and boys vary with
           age. Consequently, a child's age and gender are considered when
           evaluating their BMI.
@@ -203,7 +209,7 @@
           />
         </svg>
         <span>Age</span>
-        <p class="subtext">
+        <p class="subtext color-darkelectricblue-text">
           In aging individuals, increased body fat and muscle loss may cause BMI
           to underestimate body fat content.
         </p>
@@ -222,7 +228,7 @@
           />
         </svg>
         <span>Muscle</span>
-        <p class="subtext">
+        <p class="subtext color-darkelectricblue-text">
           BMI may misclassify muscular individuals as overweight or obese, as it
           doesn't differentiate muscle from fat.
         </p>
@@ -241,7 +247,7 @@
           />
         </svg>
         <span>Pregnancy</span>
-        <p class="subtext">
+        <p class="subtext color-darkelectricblue-text">
           Expectant mothers experience weight gain due to their growing baby.
           Maintaining a healthy pre-pregnancy BMI is advisable to minimise
           health risks for both mother and child.
@@ -263,7 +269,7 @@
           </svg>
           <span class="bmi-limitation-header semi-bold">Race</span>
         </div>
-        <p class="subtext">
+        <p class="subtext color-darkelectricblue-text">
           Certain health concerns may affect individuals of some Black and Asian
           origins at lower BMIs than others. To learn more, it is advised to
           discuss this with your GP or practice nurse.

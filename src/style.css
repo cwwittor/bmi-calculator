@@ -131,6 +131,10 @@ body {
   line-height: var(--line-height-small);
 }
 
+.img-guy {
+  max-width: 100%;
+}
+
 .three-habits {
   display: flex;
   flex-direction: column;

@@ -16,7 +16,7 @@
     <title>Frontend Mentor | Body Mass Index Calculator</title>
   </head>
   <body class="inter">
-    <button onclick="idealMetricBMI(185)">Killllllll</button>
+    <button onclick="buttonHeight()">Killllllll</button>
     <section class="top-section">
       <div class="header-section text-align-center color-gradient-background">
         <svg
@@ -48,7 +48,9 @@
             type="radio"
             id="metric"
             name="bmi_measurement_type"
+            checked
             value="Metric"
+            onclick="swapInput(id)"
           />
           <label class="subtext color-gunmetal-text bold" for="metric"
             >Metric</label
@@ -58,26 +60,79 @@
             id="imperial"
             name="bmi_measurement_type"
             value="Imperial"
+            onclick="swapInput(id)"
           />
           <label class="subtext-gunmetalbold" for="imperial">Imperial</label>
         </div>
         <div>
-          <div>
+          <div class="metricBmiInputs">
             <label class="small-text" for="height">Height</label>
-            <input type="text" id="height" name="bmi_measurement" value="cm" />
+            <input
+              type="number"
+              id="height"
+              name="bmi_measurement_metric"
+              onkeyup="metricInput(value, id)"
+              value=""
+            />
           </div>
-          <div>
+          <div class="metricBmiInputs">
             <label class="small-text" for="weight">Weight</label>
-            <input type="text" id="weight" name="bmi_measurement" value="kg" />
+            <input
+              type="number"
+              id="weight"
+              name="bmi_measurement_metric"
+              onkeyup="metricInput(value, id)"
+              value=""
+            />
+          </div>
+          <div class="imperialBmiInputs">
+            <label class="small-text" for="height-feet">Feet</label>
+            <input
+              type="number"
+              id="feet"
+              name="imperial"
+              onkeyup="imperialInput(value, id)"
+              value=""
+            />
+          </div>
+          <div class="imperialBmiInputs">
+            <label class="small-text" for="height-inches">Inches</label>
+            <input
+              type="number"
+              id="inches"
+              name="imperial"
+              onkeyup="imperialInput(value, id)"
+              value=""
+            />
+          </div>
+          <div class="imperialBmiInputs">
+            <label class="small-text" for="weight-stones">Stones</label>
+            <input
+              type="number"
+              id="stones"
+              name="imperial"
+              onkeyup="imperialInput(value, id)"
+              value=""
+            />
+          </div>
+          <div class="imperialBmiInputs">
+            <label class="small-text" for="weight-pounds">Pounds</label>
+            <input
+              type="number"
+              id="pounds"
+              name="imperial"
+              onkeyup="imperialInput(value, id)"
+              value=""
+            />
           </div>
         </div>
         <div class="color-background-blue">
           <p class="subtext color-white-text bold">Your BMI is...</p>
-          <h1 class="color-white-text">SCORE</h1>
+          <h1 class="color-white-text" id="score-bmi">NaN</h1>
           <p class="color-white-text">
             Your BMI suggests you're Your BMI suggests you're
-            <!-- add classification -->. Your ideal weight is between
-            <!-- add range -->.
+            <span id="bmi-status" value=""></span>. Your ideal weight is between
+            <span id="ideal-bmi-range" value=""></span>.
           </p>
         </div>
       </div>

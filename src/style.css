@@ -109,6 +109,14 @@ body {
   letter-spacing: var(--letter-spacing-short);
 }
 
+.imperialBmiInputs {
+  display: none;
+}
+
+.metricBmiInputs {
+  display: block;
+}
+
 .subtext {
   /* color: var(--darkelectricblue); */
   font-size: var(--font-size-small);

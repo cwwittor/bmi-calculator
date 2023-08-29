@@ -13,6 +13,7 @@ function swapInput(input) {
   if (input === "metric") {
     document.getElementById("score-bmi").innerHTML = "NaN";
     document.getElementById("ideal-bmi-range").innerHTML = "_ - _";
+    document.getElementById("bmi-status").innerHTML = "";
 
     let doc = document.getElementsByClassName("imperialBmiInputs");
     [...doc].forEach((element) => {
@@ -140,6 +141,12 @@ function idealMetricBMI(height) {
     "kgs";
 
   document.getElementById("ideal-bmi-range").innerHTML = idealRange;
+
+  if (height > idealUpperWeight || height < idealLowerWeight) {
+    document.getElementById("bmi-status").innerHTML = "unhealthy";
+  } else {
+    document.getElementById("bmi-status").innerHTML = "healthy";
+  }
 }
 
 function idealImperialBMI(height) {
@@ -162,4 +169,10 @@ function idealImperialBMI(height) {
     idealUpperPounds +
     "lbs";
   document.getElementById("ideal-bmi-range").innerHTML = idealRange;
+
+  if (height > idealUpperWeight || height < idealLowerWeight) {
+    document.getElementById("bmi-status").innerHTML = "unhealthy";
+  } else {
+    document.getElementById("bmi-status").innerHTML = "healthy";
+  }
 }

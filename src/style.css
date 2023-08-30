@@ -104,7 +104,42 @@ body {
 }
 
 .bmi-measure-section {
-  max-width: 20.5rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  /* max-width: 20.5rem; */
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+.blue-box {
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.measurement-type {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  color: var(--blue);
+  /* transform: translateY(-50%); */
+}
+
+.measurement-box {
+  display: flex;
+}
+
+.metricBmiInputs {
+  display: block;
+  position: relative;
+}
+
+.input-box {
+  padding: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+  /* padding-right: 60px; */
 }
 
 .middle-section {
@@ -137,10 +172,6 @@ body {
 
 .imperialBmiInputs {
   display: none;
-}
-
-.metricBmiInputs {
-  display: block;
 }
 
 .subtext {
@@ -222,6 +253,7 @@ body {
 
 .inter {
   font-family: "Inter";
+  /* background-color: #d8e2e7; */
 }
 
 /* GET VARIABLES AND HTML ELEMENTS SETUP */

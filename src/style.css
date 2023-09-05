@@ -21,6 +21,7 @@
   --font-size-small-header: 1.5rem;
   --font-size-medium: 2rem;
   --font-size-large: 3rem;
+  --font-size-xlarge: 4rem;
 
   --gap-smaller: 1rem;
   --gap-small: 2.5rem;
@@ -290,6 +291,71 @@ body {
 
 .wideeee {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .three-habits {
+    margin: 5rem 0 5rem 0;
+    padding: 3rem 0 3rem 2rem;
+  }
+
+  .habit-item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .middle-section {
+    width: 100%;
+    display: flex;
+    margin: 5rem 0 5rem 0;
+  }
+
+  .img-guy {
+    max-width: 50%;
+  }
+
+  .flex-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+  .bottom-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--gap-smaller);
+    padding: 3.5rem 0 5rem 0;
+    justify-content: center;
+  }
+
+  .bmi-limitation-item {
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .large-text {
+    /* font-size: var(--font-size-xlarge); */
+    /* max-width: 400px; */
+  }
+
+  .bmi-measure-section {
+    padding-bottom: 1.5rem;
+  }
+
+  .subtext {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+  .metric-flex {
+    display: flex;
+    gap: 1rem;
+  }
 }
 
 /* .checkmark {

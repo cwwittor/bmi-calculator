@@ -294,9 +294,22 @@ body {
 }
 
 @media (min-width: 768px) {
+  .heading-top {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .header-section {
+    width: 100%;
+  }
+
   .three-habits {
-    margin: 5rem 0 5rem 0;
-    padding: 3rem 0 3rem 2rem;
+    margin: 0 0 5rem 0;
+    padding: 8rem 0 3rem 2rem;
   }
 
   .habit-item {
@@ -308,7 +321,8 @@ body {
   .middle-section {
     width: 100%;
     display: flex;
-    margin: 5rem 0 5rem 0;
+    padding: 5rem 0 5rem 0;
+    background: linear-gradient(to top left, var(--lightgrey), var(--white));
   }
 
   .img-guy {
@@ -348,13 +362,35 @@ body {
     padding-bottom: 1.5rem;
   }
 
-  .subtext {
-    margin: 0 1.5rem 0 1.5rem;
-  }
-
   .metric-flex {
     display: flex;
     gap: 1rem;
+  }
+
+  .blue-box {
+    max-width: 85%;
+    border-radius: 1rem 6rem 6rem 1rem;
+  }
+
+  .bmi-score {
+    font-size: var(--font-size-large);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .blue-flex {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .middle-section {
+    width: 100%;
+    display: flex;
+    padding: 5rem 0 5rem 0;
+    background: var(--white);
   }
 }
 

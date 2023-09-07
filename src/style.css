@@ -293,6 +293,11 @@ body {
   width: 100%;
 }
 
+.buttons-header {
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   .heading-top {
     display: flex;
@@ -391,6 +396,58 @@ body {
     display: flex;
     padding: 5rem 0 5rem 0;
     background: var(--white);
+    align-items: center;
+  }
+
+  .three-habits {
+    flex-direction: row;
+  }
+
+  .habit-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header-text {
+    font-size: var(--font-size-large);
+    margin-bottom: 1rem;
+  }
+
+  .img-guy {
+    width: 50%;
+    /* padding: 6rem; */
+  }
+
+  .flex-middle {
+    padding: 1rem;
+  }
+
+  .desktop-bottom {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+  .bmi-measure-section {
+    max-width: 564px;
+    margin: 0 auto;
+  }
+
+  .header-enter {
+    align-self: start;
+    margin-left: 1.2rem;
+  }
+
+  .buttons-header {
+    justify-content: flex-start;
+  }
+
+  .top-section {
+    display: flex;
+  }
+
+  .header-section {
+    justify-content: start;
   }
 }
 

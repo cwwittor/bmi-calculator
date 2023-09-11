@@ -429,6 +429,7 @@ body {
   }
 
   .bmi-measure-section {
+    padding: 1rem;
     max-width: 564px;
     margin: 0 auto;
   }
@@ -447,7 +448,80 @@ body {
   }
 
   .header-section {
+    text-align: left;
     justify-content: start;
+  }
+
+  .grid-bottom {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+  }
+
+  .item0 {
+    grid-area: 1 / 1 / 1 / 3;
+  }
+
+  .item1 {
+    grid-area: 1 / 3 / 1 / 5;
+  }
+
+  .item2 {
+    grid-area: 2 / 2 / 2 / 4;
+  }
+
+  .item3 {
+    grid-area: 2 / 4 / 2 / 6;
+  }
+
+  .item4 {
+    grid-area: 3 / 1 / 3 / 3;
+  }
+
+  .item5 {
+    grid-area: 3 / 3 / 3 / 5;
+  }
+
+  .logo {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .header-subtext {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+
+  .heading-top {
+    width: 60%;
+    padding-top: 3rem;
+  }
+
+  .background-bmi-box {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(
+      to right,
+      var(--lightgrey) 50%,
+      transparent 50%
+    );
+    border-bottom-right-radius: 10px;
+  }
+
+  .color-gradient-background {
+    background: linear-gradient(
+      to top left,
+      var(--lightgrey),
+      var(--white) 50%
+    );
+  }
+
+  .bottom-color-gradient-background {
+    background: linear-gradient(to top, var(--lightgrey), var(--white) 50%);
   }
 }
 

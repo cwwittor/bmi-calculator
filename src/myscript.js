@@ -23,9 +23,6 @@ function swapInput(input) {
     [...docMetric].forEach((element) => {
       element.style.display = "block";
     });
-
-    // document.getElementsByClassName("imperialMetricInputs").style.display =
-    // "block";
   } else {
     document.getElementById("score-bmi").innerHTML = "NaN";
     document.getElementById("ideal-bmi-range").innerHTML = "_ - _";
@@ -38,29 +35,8 @@ function swapInput(input) {
     [...docMetric].forEach((element) => {
       element.style.display = "none";
     });
-    // document.getElementsByClassName("imperialBmiInputs").style.display =
-    //   "block";
-    // document.getElementsByClassName("imperialMetricInputs").style.display =
-    //   "none";
   }
 }
-
-// function metricInput(input, type) {
-//   if (isNaN(input)) {
-//     document.getElementById("score-bmi").innerHTML = "NaN was attempted";
-//     return;
-//   }
-
-//   if (type === "height") {
-//     metricHeight = input;
-//   } else {
-//     metricWeight = input;
-//   }
-
-//   if (metricHeight !== 0 && metricWeight !== 0) {
-//     metricBMIval = metricBMI(metricHeight, metricWeight);
-//   }
-// }
 
 function imperialInput(input, type) {
   if (isNaN(input)) {
